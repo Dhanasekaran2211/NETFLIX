@@ -1,0 +1,37 @@
+.main-rows {
+    position: relative;
+}
+
+.right-arrow {
+    position: absolute;
+    right: 10px;
+    bottom: 40%;
+}
+
+.left-arrow {
+    position: absolute;
+    left: 8px;
+    bottom: 40%;
+}
+
+.right-arrow,
+.left-arrow {
+    border: black;
+    visibility: hidden;
+}
+
+.arrow-icons {
+    height: 50px;
+    width: 20px;
+    background-color: black;
+    color: rgb(184, 173, 173);
+    border: none;
+}
+
+.main-rows:hover>.right-arrow {
+    visibility: visible;
+}
+
+.main-rows:hover>.left-arrow {
+    visibility: visible;
+}

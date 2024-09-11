@@ -1,0 +1,23 @@
+.lable-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lable-container .lable-content{
+    font-size: 25px;
+}
+.lable-content p{
+    flex-wrap: wrap;
+    width: 500px;
+}
+.video{
+  z-index: 1;
+  height: 390px;
+  width: 390px;
+  margin-left: 70px;
+}
+.imgvd{
+  height: 300px; 
+  width: 500px;
+  margin-bottom: 100px;
+}

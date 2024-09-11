@@ -1,0 +1,38 @@
+
+.land-main{
+    background-image: url(../../assets/Image/netflixbackground.jpeg);
+    height: 100vh;
+    color: white;
+    background-size: cover;
+    width: 100vw;
+   
+}
+.land-content h1{
+    font-size: 50px;
+}
+.land-content h3{
+    font-size: 25px;
+    font-weight: 400;
+}
+.land-content p{
+    font-size: 22px;
+    font-weight: 400;
+}
+.input{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.land-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+    gap: 20px;
+}
+.accordion-container{
+    background-color: black;
+    border-top: rgba(128, 128, 128, 0.669);
+}
