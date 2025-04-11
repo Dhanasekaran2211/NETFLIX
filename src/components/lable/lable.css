@@ -1,23 +1,58 @@
-.lable-container{
+.lable-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 5%;
+  gap: 40px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+}
+
+.lable-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.lable-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.lable-text p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.lable-media {
+  flex: 1;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.lable-container .lable-content{
-    font-size: 25px;
+
+.label-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  z-index: 2;
 }
-.lable-content p{
-    flex-wrap: wrap;
-    width: 500px;
-}
-.video{
+
+.label-video {
+  position: absolute;
+  top: 20%;
+  left: 13%;
+  width: 73%;
+  height: 60%;
   z-index: 1;
-  height: 390px;
-  width: 390px;
-  margin-left: 70px;
+  object-fit: cover;
 }
-.imgvd{
-  height: 300px; 
-  width: 500px;
-  margin-bottom: 100px;
+
+/* Special adjustment for second TV layout */
+.lable-media.has-video .label-video {
+  top: 10%;
+  left: 19%;
+  width: 62%;
+  height: 66%;
 }

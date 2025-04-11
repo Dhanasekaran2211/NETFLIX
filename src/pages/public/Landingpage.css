@@ -1,4 +1,6 @@
-
+body {
+    overflow-x: hidden;
+  }  
 .land-main{
     background-image: url(../../assets/Image/netflixbackground.jpeg);
     height: 100vh;

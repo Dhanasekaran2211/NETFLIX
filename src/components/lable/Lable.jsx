@@ -1,20 +1,49 @@
-import React from 'react'
-import "./lable.css"
-const Lable = ({head,para,height,bg,border,color,img,wrap,width,reverse,gap,right,top,video,video1}) => {
-  return (
-   <>
-   <div className="lable-container" style={{flexDirection:reverse,height:height,backgroundColor:bg,borderTop:border,color:color,width:"100vw",gap:gap,}}>
-    <div className="lable-content" style={{display:"flex",flexDirection:"column",flexWrap:"100px",width:width,marginLeft:right}}>
-    <h1 style={{fontSize:"45px",fontWeight:"900",flexWrap:wrap}}>{head}</h1>
-    <p style={{fontSize:"25px",fontWeight:"600",display:"flex",flexWrap:"wrap",width:"420px"}}>{para}</p>
-    </div>
-    <div className="imgvd" style={{gap:gap,marginTop:top}}>
-      <img src={img} alt="tv" className={"clsnm"} style={{height:"400px",position:"absolute"}}/>
-      <video className={"video"}  autoPlay muted loop><source src={video} /></video>
-    </div>
-   </div>
-   </>
-  )
-}
+import React from "react";
+import "./lable.css";
 
-export default Lable
+const Lable = ({
+  color,
+  head,
+  para,
+  height,
+  bg,
+  borderBottom,
+  img,
+  video,
+  reverse,
+  wrap,
+}) => {
+  return (
+    <div
+      className="lable-main"
+      style={{
+        background: bg,
+        height: height,
+        borderBottom: borderBottom || "1px solid rgba(128, 128, 128, 0.4)",
+        flexDirection: reverse || "row",
+        flexWrap: wrap || "nowrap",
+      }}
+    >
+      <div className="lable-text">
+        <h1 style={{ color }}>{head}</h1>
+        <p style={{ color }}>{para}</p>
+      </div>
+
+      <div className={`lable-media ${video ? "has-video" : ""}`}>
+        <img src={img} alt="label" className="label-img" />
+        {video && (
+          <video
+            className="label-video"
+            src={video}
+            autoPlay
+            playsInline
+            loop
+            muted
+          />
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default Lable;

@@ -18,6 +18,7 @@
     margin-bottom: 20px;
     object-position: bottom;
     transition: box-shadow 0.3s ease;
+    gap: 100px;
 }
 
 .card-img {
